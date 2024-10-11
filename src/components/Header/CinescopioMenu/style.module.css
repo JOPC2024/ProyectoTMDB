@@ -1,0 +1,14 @@
+.circleBurger{
+    background-color: #143F4D;
+    border-radius: 40px 40px 0px 0px;
+    margin: 20px auto;
+    width: 50px;
+    height: 74px;
+    padding: 1px;
+}
+.burger{
+    width: 20px;
+    height: 20px;
+    margin:15px 0px 0px 13px;
+    cursor: pointer;
+}

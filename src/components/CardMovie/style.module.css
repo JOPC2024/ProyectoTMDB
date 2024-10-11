@@ -1,0 +1,32 @@
+.movies{
+    height: 100%;
+    text-align: center;
+    border:2px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 10px 5px 10px #111010;
+    cursor: pointer;
+}
+.movies > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.movie > div{
+    display: block;
+    margin-top: -10px;
+    width: 100%;
+}
+.movieCardDescription{
+    margin-top: -84px;
+    background-color: black;
+    width: 100%;
+    height: 78px;
+    opacity: 0.7;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}

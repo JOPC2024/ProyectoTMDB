@@ -1,0 +1,138 @@
+header{
+    position: fixed;
+    width: 100%;
+    background-color:var(--bg-color);
+    border-bottom: 5px var(--menu-bg-color) solid;
+    z-index: 99999;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLeft{
+    font-family: 'PORKYS';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.headerCenter{
+    display: none;
+}
+.headerRight{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+.dropDownMenu{
+    background-color: var(--menu-bg-color) ;
+    height: 0px;
+}
+.dropDownMenu > ul{
+    list-style: none;
+    text-align: center;
+}
+.dropDownMenuVisibility{
+    height: 100px;
+}
+.listMenuOpcionOn{
+    display: block;
+    cursor: pointer;
+}
+.listMenuOpcionOff{
+    display: none;
+}
+.listMenuOn{
+    display: block;
+}
+.listMenuOff{
+    display: none;
+}
+.search{
+    width: 80%;
+    display:flex;
+    justify-content: row;
+}
+.searchMenu{
+    margin: auto;
+    padding: 10px;
+}
+.searchMenu > input{
+    background-color: var(--bg-color);
+}
+.glass{
+    margin:3px 0px 0px -30px; 
+    cursor: pointer;
+}
+.filter{
+    display: none;
+}
+input{
+    width: 100%;
+    height: 30px;
+    color:var(--text-color);
+    background-color:transparent;
+    border: 2px solid var(--menu-bg-color);
+    border-radius: 20px;
+    text-align: center;
+}
+@keyframes menu{
+    from{height:0px}
+    to{height:100px}
+}
+@keyframes listmenu{
+    from{visibility: hidden;}
+    to{visibility: visible;}
+}
+
+@media (min-width:500px) and (max-width:799px){
+    .search{
+        width: 60%;
+    }
+    .dropDownMenuVisibility{
+        height: 40px;
+    }    
+    .headerCenter{
+        width: 100%;
+        height: 90px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .listMenuOn{
+        display: none;
+    }
+}
+
+@media (min-width:800px){
+    .search{
+        width: 30%;
+    }
+    .headerCenter{
+        width: 100%;
+        height: 90px;
+        display:flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+        align-items: center;
+    }
+    .headerRight{
+        display:none;
+    }
+    .listMenu{
+        display: block;
+    }
+    nav{
+        display:none;
+    }
+    .filter{
+        display: block;
+        margin: 30px;
+        cursor: pointer;
+    }
+}

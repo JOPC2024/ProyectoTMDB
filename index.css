@@ -1,0 +1,31 @@
+:root{
+    --bg-color:#050a1e;
+    --menu-bg-color:#143F4D;
+    --text-color:#FFFFFF;
+    --bg-color-lol:#020d34;
+}
+@font-face {
+    font-family: 'PORKYS';
+    src: url('/fonts/PORKYS.TTF');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color:var(--text-color);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main{
+    background-color: var(--bg-color-lol);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
